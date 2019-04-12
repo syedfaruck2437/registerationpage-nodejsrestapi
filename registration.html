@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+<meta charset="UTF-8">
+
+<title>Registration Table</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style type="text/css">
+body {
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:15px;
+}
+label {
+	width:100px;
+	float:left;
+}
+.container {
+	width:100%;
+	padding:90px 0 0 0;
+}
+.loginblock {
+	width:270px;
+	margin:0 auto;
+	background:#D6EFF3;
+	padding:30px 21px 15px 21px;
+}
+.title {
+	text-align:center;
+	font-size:21px;
+	font-weight:bold;
+	margin-bottom:21px;
+}
+.rowblock {
+	width:100%;
+	margin-bottom:10px;
+}
+</style>
+</head>
+
+<body>
+<form action="/login_create" method="POST">
+<div class="container">
+  <div class="loginblock">
+    <div class="title">Registration</div>
+    <div class="rowblock">
+           
+      <label>First name</label>
+     <input placeholder="first_name" name="create_first_name" required="required"/>
+    </div>
+    <div class="rowblock">
+      <label>Last name</label>
+      <input placeholder="last_name" name="create_last_name" required="required"/>
+    </div>
+    <div class="rowblock">
+      <label>Email</label>
+      <input type="text" class="form-control" name="create_email" id="adv_email" placeholder="Email ID" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="Enter validated email address" required="required" tabindex="3">
+    </div>
+    <div class="rowblock">
+      <label>Phone</label>
+      <input placeholder="phone" name="create_phone" required="required"/>
+    </div>
+    <div class="rowblock">
+      <label>City</label>
+      <input placeholder="city" name="create_city" required="required"/>
+    </div>
+    <div class="rowblock">
+      <label>State</label>
+      <input placeholder="state" name="create_state" required="required"/>
+    </div>
+    <div class="rowblock">
+      <label>Country</label>
+      <input placeholder="country" name="create_country" required="required"/>
+    </div>
+    <div class="rowblock">
+        <label>Pincode</label>
+        <input placeholder="pincode" name="create_pincode" required="required"/>
+    </div>
+    <div class="rowblock">
+      <label>&nbsp;</label>
+      <input type="submit" value="Submit" />
+      <input type="reset" value="Reset"/>
+    </form>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
